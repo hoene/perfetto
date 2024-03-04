@@ -43,7 +43,7 @@ def relpath(path):
 
 
 def download(url, out_file):
-  subprocess.check_call(['curl', '-L', '-s', '-o', out_file, url])
+  subprocess.check_call(['curl', '-k', '-L', '-s', '-o', out_file, url])
 
 
 def list_files(path, scan_new_files=False):
