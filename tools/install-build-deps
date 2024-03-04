@@ -469,7 +469,7 @@ def CheckCallRetry(*args, **kwargs):
 
 
 def DownloadURL(url, out_file):
-  CheckCallRetry(['curl', '-L', '-#', '-o', out_file, url])
+  CheckCallRetry(['curl', '-k', '-L', '-#', '-o', out_file, url])
 
 
 def GetArch():
